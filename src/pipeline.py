@@ -4,8 +4,13 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
-from .agents.creator import TitleCreationResult, gerar_titulos_com_neo4j
-from .agents.validator import ValidationResult, validar_ideia
+from .agents_api import (
+    TitleCreationResult,
+    ValidationResult,
+    VideoTitle,
+    gerar_titulos_com_neo4j,
+    validar_ideia,
+)
 from .neo4j_client import Neo4jClient
 from .neo4j_executor import executar_operacoes_neo4j
 from .storage import salvar_resultado_completo
@@ -219,9 +224,6 @@ async def executar_pipeline_completo(
         print(f"❌ Erro no pipeline: {e}")
 
         # Criar resultado de fallback
-        from .agents.creator import TitleCreationResult, VideoTitle
-        from .agents.validator import ValidationResult
-
         fallback_validation = ValidationResult(
             {
                 "original_idea": ideia,

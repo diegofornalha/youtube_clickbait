@@ -137,7 +137,7 @@ def validar(
     )
 
     async def run():
-        from .agents.validator import validar_ideia
+        from .agents_api import validar_ideia
 
         with Progress(
             SpinnerColumn(),
