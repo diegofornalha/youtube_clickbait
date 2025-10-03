@@ -1,0 +1,28 @@
+# Ambiente e API Keys (NUNCA commitar!)
+.env
+.env.local
+*.env
+*api_key*
+*secret*
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Logs dos hooks
+*.log
+logs/
+
+# Temporários
+tmp/
+temp/
+*.tmp
+
+# Arquivos antigos (já arquivados localmente)
+archive/
+
+# Opcional: Descomentar se NÃO quiser versionar os outputs
+# outputs/
