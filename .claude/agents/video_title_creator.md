@@ -311,23 +311,14 @@ Sempre que gerar títulos, **CRIAR** um arquivo novo com o nome sendo o **títul
 ## Ideia Original
 "[IDEIA BRUTA DO USUÁRIO]"
 
-## 📊 Validação
-- **Score Ideia**: X.X/10
-- **Ângulo**: [ângulo sugerido pela validação]
-- **Views Estimadas**: [estimativa do validator]
-- **Fatores Virais**: [lista de fatores identificados]
-
-## Alternativas
-1. [Título alt 1] (CTR)
-2. [Título alt 2] (CTR)
-3. [Título alt 3] (CTR)
-4. [Título alt 4] (CTR)
+## 🧠 Insights do Neo4j
+- **Memórias Relacionadas**: [memórias encontradas]
+- **Aprendizados**: [aprendizados relevantes]
 ```
 
 **IMPORTANTE**:
 - Nome do arquivo = título recomendado (sem emoji no nome, se necessário simplificar)
-- Formato minimalista
-- Apenas 4 alternativas no arquivo
+- Formato minimalista e ultra-enxuto
 - Sempre usar **Write** tool
 
 ## 🎬 Personalização para Claude SDK

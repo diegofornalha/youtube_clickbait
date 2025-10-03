@@ -6,11 +6,67 @@
 *secret*
 credentials.json
 
-# IDE
+# IDE e Editores
 .vscode/
 .idea/
+.cursor/
 .DS_Store
 *.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Ambientes virtuais
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Ruff
+.ruff_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
 
 # Logs dos hooks
 *.log
@@ -24,5 +80,18 @@ temp/
 # Arquivos antigos (já arquivados localmente)
 archive/
 
-# Opcional: Descomentar se NÃO quiser versionar os outputs
-# outputs/
+# Claude Agent específico
+hello.txt
+*.md.bak
+
+# Pasta duplicada do SDK (usar apenas claude-agent-sdk-python/)
+claude-agent-diego-fornalha/
+
+# Outputs de execução (backups e logs)
+outputs/backups/
+outputs/execution_log.jsonl
+outputs/agent_executions.jsonl
+outputs/metrics/
+
+# Opcional: Descomentar se NÃO quiser versionar as ideias geradas
+# outputs/Lista de ideias/
