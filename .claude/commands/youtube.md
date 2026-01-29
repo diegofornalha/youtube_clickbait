@@ -1,6 +1,6 @@
-# /youtube - Títulos Virais Simples
+# /youtube - Gerador de Pacote SEO Completo
 
-Gera título viral + keywords SEO usando agents e Neo4j.
+Gera pacote completo para YouTube: título viral, descrição, tags, thumbnail e hook.
 
 ## Uso
 
@@ -8,70 +8,62 @@ Gera título viral + keywords SEO usando agents e Neo4j.
 /youtube [sua ideia]
 ```
 
-## Workflow (100% Automático)
-
-1. 🧠 **Neo4j** → Buscar aprendizados anteriores
-2. ✅ **idea_validator** → Validar potencial viral
-3. 🎯 **video_title_creator** → Gerar título otimizado
-4. 💾 **Salvar** → Arquivo minimalista em `outputs/`
-
 ## Instruções para Claude
 
 Quando o usuário executar `/youtube [ideia]`:
 
-### Passo 1: Consultar Neo4j
+### 1. Carregar Skill
+
+Ler a skill `viral-youtube-titles` para contexto completo:
+```
+.claude/skills/viral-youtube-titles/SKILL.md
+```
+
+### 2. Consultar Neo4j
+
 ```javascript
 mcp__neo4j-memory__search_memories("{ideia}")
 ```
 
-### Passo 2: Validar via Agent
-```javascript
-Task(subagent_type="idea_validator", prompt="Validar: {ideia}")
-```
+### 3. Validar Ideia (Score 0-10)
 
-### Passo 3: Gerar Título via Agent
-```javascript
-Task(subagent_type="video_title_creator", prompt="Gerar título viral para: {ideia}")
-```
+Aplicar critérios de `references/scoring_criteria.md`
 
-### Passo 4: Salvar Arquivo Minimalista
+### 4. Gerar Pacote SEO Completo
+
+Seguir template da SKILL.md:
+- 3 variações de título (fórmulas diferentes)
+- Descrição com timestamps
+- Tags (máx 500 chars)
+- Sugestão de thumbnail
+- Script do hook (30s)
+
+### 5. Salvar Arquivo
 
 **Caminho**: `outputs/Lista de ideias/[TÍTULO_SLUG].md`
 
-**Template**:
-```markdown
-# [EMOJI] [TÍTULO VENCEDOR]
+Usar template SEO Completo da SKILL.md
 
-**CTR**: X.X/10 | **Score**: X/10 | **Data**: YYYY-MM-DD
+### 6. Persistir no Neo4j
 
-## Ideia
-"{ideia original}"
-
-## Sugestões
-1. [EMOJI] Título opção 1 (CTR: X.X/10)
-2. [EMOJI] Título opção 2 (CTR: X.X/10)
-3. [EMOJI] Título opção 3 (CTR: X.X/10)
-
-## Keywords
-principal, keywords, aqui, separadas, por, virgula
-
-## Hashtags
-#tag1 #tag2 #tag3 #tag4 #tag5
+```javascript
+mcp__neo4j-memory__create_entities([...])
 ```
 
-## Output para Usuário (MINIMALISTA)
+## Output para Usuário
 
 ```
-✅ [TÍTULO COM EMOJI]
+✅ Pacote SEO gerado!
 
-CTR: 9.8/10 | Score: 8.5/10
-Keywords: keyword1, keyword2, keyword3
-📄 outputs/Lista de ideias/titulo-slug.md
+Título: [TÍTULO VENCEDOR]
+Score: 8.5/10 | CTR: 9.5/10
+
+📄 outputs/Lista de ideias/[slug].md
 ```
 
-**Regras**:
+## Regras
+
+- ❌ NÃO mostrar conteúdo completo do arquivo
 - ❌ NÃO explicar cada etapa
-- ❌ NÃO mostrar JSON dos agents
-- ✅ Apenas resultado final limpo
-- ✅ Sempre usar Neo4j + agents
-- ✅ Arquivo MD minimalista (< 15 linhas)
+- ✅ Apenas confirmação + título + path
+- ✅ Usuário abre arquivo para copiar seções

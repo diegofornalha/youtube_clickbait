@@ -1,175 +1,157 @@
 ---
 name: viral-youtube-titles
-description: Generate viral YouTube titles optimized for clicks, engagement, and algorithm performance using proven formulas, psychological triggers, and platform-specific strategies
+description: |
+  Gera pacote completo de SEO para YouTube: título viral, descrição otimizada,
+  tags, sugestão de thumbnail e hook de abertura. Usar quando precisar:
+  (1) Gerar títulos virais para vídeos
+  (2) Criar descrição SEO-otimizada
+  (3) Montar pacote completo para upload
+  Triggers: título viral, youtube title, gerar título, seo youtube, descrição youtube
 ---
 
-# Viral YouTube Titles Generator
+# Viral YouTube Titles
 
-## Overview
+Skill para geração de pacote SEO para YouTube.
 
-Generate high-performing YouTube titles using proven viral formulas, psychological triggers, and platform-optimized strategies. This skill combines data-driven patterns from successful channels with engagement psychology to create titles that maximize CTR (Click-Through Rate) and viewer retention.
+## Quick Start
 
-## Core Principles
+1. Consultar Neo4j para contexto histórico
+2. Validar potencial da ideia (score 0-10)
+3. Gerar 3 títulos + tags + hashtags + hook
+4. Salvar resultado em `outputs/Lista de ideias/`
 
-### Title Length Optimization
-- **Optimal range**: 50-60 characters (displays fully on most devices)
-- **Maximum**: 70 characters (before truncation)
-- Include key information in first 40 characters for mobile visibility
+## Workflow Completo
 
-### Psychological Triggers
+### 1. Consultar Neo4j (Contexto)
 
-#### Curiosity Gap
-Create intrigue without revealing the complete answer:
-- "The Real Reason Why [Subject] [Unexpected Outcome]"
-- "What Nobody Tells You About [Topic]"
-- "I Tried [Thing] for 30 Days and [Cliffhanger]"
+```javascript
+mcp__neo4j-memory__search_memories("{ideia}")
+```
 
-#### Urgency & FOMO (Fear of Missing Out)
-- "Why Everyone Is Talking About [Topic] Right Now"
-- "The [Topic] Trick That's About to Blow Up"
-- "[Year] Ultimate Guide Before It's Too Late"
+### 2. Validar Potencial (Score 0-10)
 
-#### Social Proof & Authority
-- "[Number]M People Can't Be Wrong About [Topic]"
-- "Why [Expert/Celebrity] Says [Controversial Statement]"
-- "The [Industry] Secret Professionals Don't Want You to Know"
+| Critério | Peso | O que avaliar |
+|----------|------|---------------|
+| Viral Potential | 30% | Clickbait ético + thumbnail impactante |
+| Technical Value | 25% | Resolve problema real |
+| Audience Fit | 20% | Nível adequado + timing |
+| Uniqueness | 25% | Ângulo original |
 
-## Title Formulas
+### 3. Gerar Pacote SEO
 
-### Formula 1: Number + Adjective + Keyword + Promise
-Generate titles following pattern: "[Number] [Power Adjective] [Keyword] That [Specific Result]"
-- "7 Insane Photography Tricks That Get Million Views"
-- "5 Underrated Apps That Save You $1000/Month"
+#### 3.1 Títulos (3 variações)
 
-### Formula 2: Question Hook + Unexpected Answer
-Pattern: "[Question]? [Surprising Answer/Result]"
-- "Why Do All YouTubers Do This? The $10,000 Secret"
-- "Is This The Future? Inside [Topic] Revolution"
+**Fórmulas Virais:**
 
-### Formula 3: Transformation/Journey
-Pattern: "How I [Action] and [Result] in [Timeframe]"
-- "How I Built a $10K Business in 30 Days (No Experience)"
-- "From Zero to 100K Subscribers: My Exact Strategy"
+1. **Comparação Brutal**: `X vs Y - Um é Z vezes MELHOR`
+2. **Transformação Rápida**: `Do ZERO ao RESULTADO em X MIN`
+3. **Segredo Revelado**: `O que NINGUÉM te conta sobre X`
+4. **Lista Específica**: `X Truques de Y que TODO Z precisa`
+5. **Urgência**: `APRENDA X ANTES que vire mainstream`
 
-### Formula 4: Controversy & Hot Takes
-Pattern: "[Common Belief] Is [Controversial Take]"
-- "Why [Popular Thing] Is Actually Ruining [Industry]"
-- "The Truth About [Topic] Nobody Wants to Admit"
+**Regras:**
+- Máximo 70 caracteres
+- Emoji estratégico no início
+- Números concretos
+- Cada título usa fórmula DIFERENTE
+- CTR mínimo: 8/10
 
-### Formula 5: Lists & Rankings
-Pattern: "[Superlative] [Number] [Topic] [Qualifier]"
-- "Top 10 Hidden Features You're Not Using"
-- "Worst Mistakes Every [Audience] Makes"
+#### 3.2 Tags (lista separada por vírgula)
 
-## Keyword Optimization
+**Regras:**
+- Máximo 500 caracteres total
+- Mix de tags curtas e longas (long-tail)
+- Incluir variações com/sem acento
+- Tag principal = título exato
 
-### Power Words Database
-**Emotional Triggers**: Shocking, Insane, Mind-Blowing, Revolutionary, Secret, Hidden, Exposed
-**Value Indicators**: Free, Easy, Simple, Fast, Ultimate, Complete, Master
-**Urgency Markers**: Now, Today, Finally, New, Breaking, Just Released
-**Credibility Builders**: Proven, Scientific, Expert, Professional, Tested, Guaranteed
+#### 3.3 Hashtags
 
-### Algorithm-Friendly Terms
-Include searchable keywords naturally:
-- Tutorial, Guide, Review, Explained
-- How to, Why, What, When
-- Tips, Tricks, Hacks, Secrets
-- Best, Worst, Top, vs, Comparison
+**Regras:**
+- Máximo 3 hashtags
+- Usar na descrição do YouTube
+- Palavras-chave principais
 
-## Niche-Specific Strategies
+#### 3.4 Hook de Abertura (primeiros 30 segundos)
 
-### Gaming
-- "[Game] But [Crazy Restriction/Challenge]"
-- "The [Weapon/Strategy] That Breaks [Game]"
-- "[Number] Things Only [Percentage]% of Players Know"
+**Estrutura:**
+1. **Provocação** (0-5s): Pergunta ou afirmação impactante
+2. **Promessa** (5-15s): O que o viewer vai ganhar
+3. **Credibilidade** (15-30s): Por que você pode ensinar isso
 
-### Tech Reviews
-- "[Product] After [Timeframe]: The Truth"
-- "I Was Wrong About [Product]"
-- "[Product A] vs [Product B]: The Clear Winner"
+### 4. Salvar Resultado
 
-### Education/Tutorial
-- "[Skill] in [Short Timeframe] (Complete Roadmap)"
-- "Stop Learning [Topic] Wrong - Do This Instead"
-- "Master [Skill] With This One Simple Method"
+**Caminho**: `outputs/Lista de ideias/[TÍTULO_SLUG].md`
 
-### Lifestyle/Vlog
-- "A Day in The Life of [Interesting Person/Job]"
-- "I Tried [Trend] So You Don't Have To"
-- "Living Like [Person] for 24 Hours Changed Everything"
+**Template:**
 
-## A/B Testing Framework
+```markdown
+# 🎬 [IDEIA ORIGINAL]
 
-Generate multiple variations for testing:
-1. **Control**: Standard informative title
-2. **Curiosity**: Add mystery element
-3. **Emotional**: Emphasize feeling/reaction
-4. **Numbers**: Include specific data/statistics
-5. **Question**: Reframe as intriguing question
+**Score**: X/10 | **Data**: YYYY-MM-DD
 
-Example variations for a productivity video:
-1. "How to Be More Productive Working From Home"
-2. "The Productivity Secret I Discovered by Accident"
-3. "This Simple Change 10X'd My Productivity (Life-Changing)"
-4. "7 Productivity Hacks That Save Me 4 Hours Daily"
-5. "Why Are Successful People Doing This Every Morning?"
+---
 
-## Emoji Usage Guidelines
+## 🎯 TÍTULOS
 
-Strategic emoji placement for increased CTR:
-- Beginning: Attention grabber (🚨, ⚠️, 🔥)
-- End: Emotional reinforcement (😱, 🤯, 💰)
-- Separators: Visual breaks (|, •, →)
-- Maximum: 1-2 emojis per title
+1. [EMOJI] Título opção 1 (CTR: X.X) - Fórmula: [nome]
+2. [EMOJI] Título opção 2 (CTR: X.X) - Fórmula: [nome]
+3. [EMOJI] Título opção 3 (CTR: X.X) - Fórmula: [nome]
 
-## Common Mistakes to Avoid
+---
 
-1. **Clickbait without delivery**: Ensure content matches title promise
-2. **All caps abuse**: Use sparingly for emphasis (1-2 words max)
-3. **Keyword stuffing**: Maintain natural readability
-4. **Copying exactly**: Adapt formulas to your unique voice
-5. **Ignoring audience**: Match sophistication level to viewer base
+## 🏷️ TAGS
+tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8
 
-## Title Analysis Process
+---
 
-To analyze existing title effectiveness:
-1. Check character count and mobile preview
-2. Identify primary psychological trigger used
-3. Locate power words and emotional hooks
-4. Verify keyword inclusion for SEO
-5. Assess promise clarity and value proposition
-6. Rate curiosity gap (1-10)
-7. Evaluate target audience appeal
+## #️⃣ HASHTAGS
+#hashtag1 #hashtag2 #hashtag3
 
-## Implementation Workflow
+---
 
-1. **Research Phase**
-   - Analyze top performing videos in niche
-   - Identify trending topics and keywords
-   - Study competitor successful titles
+## 🎬 HOOK (primeiros 30s)
 
-2. **Generation Phase**
-   - Create 10-15 title variations
-   - Apply different formulas to same content
-   - Mix emotional triggers and power words
+"[Script do hook de abertura - estrutura: provocação + promessa + credibilidade]"
+```
 
-3. **Optimization Phase**
-   - Refine for character limit
-   - Enhance with strategic keywords
-   - Add/adjust power words for impact
+### 5. Persistir no Neo4j
 
-4. **Testing Phase**
-   - Select top 3-5 variations
-   - Use platform A/B testing if available
-   - Track CTR and retention metrics
+```javascript
+mcp__neo4j-memory__create_entities([{
+  name: "TítuloViral:{titulo}",
+  entityType: "video_title",
+  observations: ["ctr:{score}", "formula:{formula}", "keywords:{keywords}"]
+}])
+```
 
-## Resources
+## Output Final para Usuário
 
-### scripts/
-- `generate_titles.py` - Generate multiple title variations based on input topic and niche
-- `analyze_title.py` - Score existing titles for virality potential
+```
+✅ Pacote SEO gerado!
+
+Score: 8.5/10
+
+📄 outputs/Lista de ideias/[slug].md
+```
+
+## Contexto Importante
+
+### Sobre COWORK (Anthropic)
+COWORK é uma feature da Anthropic (não coworking físico):
+- Modo do Claude Desktop para automação de tarefas
+- Permite executar código, manipular arquivos, navegar web
+- Funciona como "funcionário de IA" pessoal
+- Concorrente: Claude Code (mais técnico, linha de comando)
+
+### Audiência-Alvo
+- Desenvolvedores brasileiros
+- Interessados em IA e automação
+- Nível: Iniciante a avançado
+- Preferência: Tutoriais práticos com resultado rápido
+
+## Recursos
 
 ### references/
-- `viral_formulas.md` - Extended database of viral title formulas with examples
-- `case_studies.md` - Successful title breakdowns by niche and performance metrics
-- `power_words.md` - Complete power word dictionary organized by emotional impact
+- `viral_formulas.md` - Database de fórmulas virais
+- `power_words.md` - Palavras de impacto
+- `scoring_criteria.md` - Critérios de validação
