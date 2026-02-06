@@ -1,8 +1,94 @@
-# Critérios de Scoring para Validação de Ideias
+# Critérios de Validação e Scoring
 
-## Score Final (0-10)
+## Checklist Obrigatório (6 Pontos)
 
-O score final é calculado com base em 4 critérios ponderados:
+> **Todo título DEVE passar por este crivo. Se falhar em 1 ponto, volte ao rascunho.**
+
+### 1. Limite de 55 Caracteres
+```
+[ ] Título tem no máximo 55 caracteres?
+```
+**Por quê:** 70% das visualizações vêm de mobile. Acima de 55 chars, o título é cortado com "..." (reticências da morte).
+
+**Validação:**
+```
+❌ "Como eu consegui transformar meu canal do zero até 100 mil" (59 chars)
+✅ "Do ZERO a 100K inscritos - o método" (36 chars)
+```
+
+---
+
+### 2. Frontloading Aplicado
+```
+[ ] Power words estão nas primeiras 3 palavras?
+```
+**Por quê:** O cérebro faz skimming em 0.5 segundos. Se o gancho estiver no final, será ignorado.
+
+**Validação:**
+```
+❌ "Aprendi muito sobre como programar usando IA" (gancho no final)
+✅ "IA MUDOU como eu programo" (gancho no início)
+```
+
+---
+
+### 3. Open Loop Identificado
+```
+[ ] O título deixa uma pergunta sem resposta?
+```
+**Por quê:** O cérebro humano tem aversão biológica à incompletude. Open Loop cria tensão que só resolve com clique.
+
+**Validação:**
+```
+❌ "Tutorial de Python para criar APIs REST" (revela tudo)
+✅ "O método de API que MUDOU meu código" (cria mistério)
+```
+
+---
+
+### 4. Gatilho Emocional Definido
+```
+[ ] Qual dos 5 pilares este título ativa?
+```
+
+| Pilar | Indicadores |
+|-------|-------------|
+| Curiosidade | Gap de informação, mistério, pergunta |
+| Medo/Urgência | Alerta, perda, consequência negativa |
+| Desejo/Recompensa | Resultado, ganho, transformação |
+| Surpresa/Novidade | Contra-intuitivo, verdade, polêmica |
+| FOMO | Exclusividade, timing, escassez |
+
+---
+
+### 5. Alinhamento de Tráfego
+```
+[ ] Título otimizado para Browse ou Search?
+```
+
+| Estratégia | Quando Usar | Características |
+|------------|-------------|-----------------|
+| **Browse** | Viralizar | Emoção, Open Loop, polêmica |
+| **Search** | Autoridade | Clareza, SEO, palavra-chave |
+
+**Regra:** Defina a estratégia ANTES de criar o título.
+
+---
+
+### 6. Princípio Title-First
+```
+[ ] O vídeo foi construído para entregar esta promessa?
+```
+**Por quê:** Se o título promete algo que o vídeo não entrega, você terá:
+- Watch time baixo
+- Dislike alto
+- Algoritmo te pune
+
+---
+
+## Score de Validação (0-10)
+
+### Fórmula
 
 ```
 Score = (Viral × 0.30) + (Technical × 0.25) + (Audience × 0.20) + (Uniqueness × 0.25)
@@ -10,15 +96,13 @@ Score = (Viral × 0.30) + (Technical × 0.25) + (Audience × 0.20) + (Uniqueness
 
 ---
 
-## 1. Viral Potential (30%)
+### 1. Viral Potential (30%)
 
 **O que avaliar:**
-- Clickbait ético (promessa que pode ser cumprida)
-- Potencial de thumbnail impactante
-- Gatilhos emocionais presentes
-- Compartilhabilidade
-
-**Pontuação:**
+- Clickbait ético (promessa cumprível)
+- Open Loop presente
+- Frontloading aplicado
+- Gatilho emocional claro
 
 | Score | Descrição |
 |-------|-----------|
@@ -26,26 +110,16 @@ Score = (Viral × 0.30) + (Technical × 0.25) + (Audience × 0.20) + (Uniqueness
 | 7-8 | Muito atrativo - alta chance de clique |
 | 5-6 | Interessante - clique moderado |
 | 3-4 | Genérico - baixo interesse |
-| 1-2 | Sem apelo - ninguém clicaria |
-
-**Gatilhos que aumentam score:**
-- Curiosidade (gap de informação)
-- FOMO (medo de perder algo)
-- Transformação (antes/depois)
-- Polêmica (opinião contrária)
-- Números específicos
+| 1-2 | Sem apelo |
 
 ---
 
-## 2. Technical Value (25%)
+### 2. Technical Value (25%)
 
 **O que avaliar:**
 - Resolve problema real?
 - Ensina algo útil?
-- Tem profundidade técnica?
 - Conteúdo pode ser demonstrado?
-
-**Pontuação:**
 
 | Score | Descrição |
 |-------|-----------|
@@ -55,49 +129,41 @@ Score = (Viral × 0.30) + (Technical × 0.25) + (Audience × 0.20) + (Uniqueness
 | 3-4 | Superficial ou óbvio |
 | 1-2 | Sem valor prático |
 
-**Para Claude SDK especificamente:**
-- +2 pontos: Tutorial passo-a-passo
-- +1 ponto: Comparação com alternativas
-- +1 ponto: Caso de uso real
-- -1 ponto: Conteúdo teórico demais
+**Bônus:**
+- +2: Tutorial passo-a-passo
+- +1: Comparação com alternativas
+- +1: Caso de uso real
 
 ---
 
-## 3. Audience Fit (20%)
+### 3. Audience Fit (20%)
 
 **O que avaliar:**
-- Nível adequado para a audiência?
+- Nível adequado para audiência?
 - Timing correto (tendência atual)?
 - Linguagem apropriada?
-- Duração viável?
-
-**Pontuação:**
 
 | Score | Descrição |
 |-------|-----------|
-| 9-10 | Perfeito para o público-alvo |
+| 9-10 | Perfeito para público-alvo |
 | 7-8 | Muito relevante |
 | 5-6 | Relevante mas não ideal |
-| 3-4 | Desalinhado com audiência |
+| 3-4 | Desalinhado |
 | 1-2 | Completamente fora do target |
 
-**Audiência-alvo para Claude SDK:**
+**Audiência-alvo:**
 - Desenvolvedores brasileiros
 - Nível: Intermediário a avançado
 - Interesse: Automação, IA, produtividade
-- Formato preferido: Tutoriais práticos
 
 ---
 
-## 4. Uniqueness (25%)
+### 4. Uniqueness (25%)
 
 **O que avaliar:**
 - Ângulo original?
 - Diferente do que já existe?
 - Perspectiva única?
-- Informação exclusiva?
-
-**Pontuação:**
 
 | Score | Descrição |
 |-------|-----------|
@@ -107,56 +173,46 @@ Score = (Viral × 0.30) + (Technical × 0.25) + (Audience × 0.20) + (Uniqueness
 | 3-4 | Similar ao que já existe |
 | 1-2 | Cópia de conteúdo existente |
 
-**Formas de aumentar uniqueness:**
-- Comparações inéditas
-- Experimentos próprios
-- Dados exclusivos
-- Perspectiva contrária popular
-- Combinação de temas
+---
+
+## Estimativa de Performance
+
+| Score | Views Estimadas | Ação |
+|-------|-----------------|------|
+| 9-10 | 50K-100K+ (viral) | Aprovar imediatamente |
+| 7-8 | 20K-50K (acima média) | Aprovar |
+| 5-6 | 10K-20K (média) | Sugerir ajustes |
+| 3-4 | 5K-10K (abaixo média) | Refinar antes |
+| 1-2 | <5K (baixo) | Descartar |
 
 ---
 
-## Estimativa de Views
+## Validação Rápida (Teste dos 0.5s)
 
-Baseado no score final:
+Antes de aprovar qualquer título, faça o teste:
 
-| Score | Views Estimadas | Probabilidade |
-|-------|-----------------|---------------|
-| 9-10 | 50K-100K+ | Viral potencial |
-| 7-8 | 20K-50K | Acima da média |
-| 5-6 | 10K-20K | Média |
-| 3-4 | 5K-10K | Abaixo da média |
-| 1-2 | < 5K | Baixo desempenho |
+1. Olhe para o título por **meio segundo**
+2. Desvie o olhar
+3. Responda: **"Por que alguém pararia a vida para ver isso?"**
+
+Se a resposta for "porque é interessante", o título é **fraco**.
+A resposta deve ser uma **emoção específica**: curiosidade, medo, desejo, surpresa ou FOMO.
 
 ---
 
-## Output Padrão de Validação
+## Template de Saída
 
-```json
-{
-  "score": 8.5,
-  "breakdown": {
-    "viral_potential": 9,
-    "technical_value": 8,
-    "audience_fit": 8,
-    "uniqueness": 9
-  },
-  "best_angle": "comparação técnica com números concretos",
-  "views_estimate": "20K-50K",
-  "recommendations": [
-    "Adicionar números específicos no título",
-    "Focar em resultado tangível"
-  ]
-}
 ```
+✅ TÍTULO APROVADO
 
----
+Checklist: 6/6
+Score: 8.5/10
+Pilar: [Nome do pilar emocional]
+Estratégia: Browse/Search
 
-## Decisão Baseada no Score
-
-| Score | Ação |
-|-------|------|
-| 8+ | Aprovar e gerar títulos imediatamente |
-| 6-7 | Sugerir ajustes no ângulo |
-| 4-5 | Refinar ideia antes de prosseguir |
-| <4 | Descartar ou pivotar completamente |
+Breakdown:
+- Viral: 9/10
+- Technical: 8/10
+- Audience: 8/10
+- Uniqueness: 9/10
+```

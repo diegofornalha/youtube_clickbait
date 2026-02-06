@@ -1,101 +1,118 @@
 ---
 name: viral-youtube-titles
 description: |
-  Gera pacote completo de SEO para YouTube: título viral, descrição otimizada,
-  tags, sugestão de thumbnail e hook de abertura. Usar quando precisar:
-  (1) Gerar títulos virais para vídeos
-  (2) Criar descrição SEO-otimizada
-  (3) Montar pacote completo para upload
-  Triggers: título viral, youtube title, gerar título, seo youtube, descrição youtube
+  Gera pacote completo de SEO para YouTube com 5 títulos virais (um por pilar emocional),
+  tags, hashtags e hook de abertura. Baseado em psicologia do clique e Open Loops.
+  Triggers: título viral, youtube title, gerar título, seo youtube
 ---
 
 # Viral YouTube Titles
 
-Skill para geração de pacote SEO para YouTube.
+Skill para geração de títulos virais usando psicologia do clique.
 
-## Quick Start
+## Princípios Fundamentais
 
-1. Consultar Neo4j para contexto histórico
-2. Validar potencial da ideia (score 0-10)
-3. Gerar 3 títulos + tags + hashtags + hook
-4. Salvar resultado em `outputs/Lista de ideias/`
+### 1. O Clique é Emocional
+> "O clique não é uma decisão lógica — é uma reação emocional visceral e instantânea."
 
-## Workflow Completo
+O título deve funcionar como **interruptor de padrão**, tirando o usuário do modo "scrolling passivo" para "curiosidade ativa".
 
-### 1. Consultar Neo4j (Contexto)
+### 2. Open Loops
+Toda fórmula eficaz aplica o conceito de **Open Loop**: introduzir premissa impactante mas **reter** o "como" ou "o quê".
 
-```javascript
-mcp__neo4j-memory__search_memories("{ideia}")
+```
+❌ "Avisos de copyright mataram meu canal" (revela tudo)
+✅ "Este erro MATOU meu canal" (cria tensão)
 ```
 
-### 2. Validar Potencial (Score 0-10)
+### 3. Limite de 55 Caracteres
+70% das views vêm de mobile. Acima de 55 chars = "reticências da morte".
 
-| Critério | Peso | O que avaliar |
-|----------|------|---------------|
-| Viral Potential | 30% | Clickbait ético + thumbnail impactante |
-| Technical Value | 25% | Resolve problema real |
-| Audience Fit | 20% | Nível adequado + timing |
-| Uniqueness | 25% | Ângulo original |
+### 4. Frontloading
+Power words nas **primeiras 3 palavras**. O cérebro faz skimming em 0.5s.
 
-### 3. Gerar Pacote SEO
+---
 
-#### 3.1 Títulos (3 variações)
+## Workflow
 
-**Fórmulas Virais:**
+### Passo 1: Validar Ideia
 
-1. **Comparação Brutal**: `X vs Y - Um é Z vezes MELHOR`
-2. **Transformação Rápida**: `Do ZERO ao RESULTADO em X MIN`
-3. **Segredo Revelado**: `O que NINGUÉM te conta sobre X`
-4. **Lista Específica**: `X Truques de Y que TODO Z precisa`
-5. **Urgência**: `APRENDA X ANTES que vire mainstream`
+**Checklist Obrigatório (6 pontos):**
+
+- [ ] Máximo 55 caracteres?
+- [ ] Frontloading aplicado?
+- [ ] Open Loop identificado?
+- [ ] Gatilho emocional definido?
+- [ ] Alinhamento Browse/Search?
+- [ ] Título entrega promessa?
+
+**Score mínimo para aprovar: 7/10**
+
+---
+
+### Passo 2: Gerar 5 Títulos (1 por Pilar Emocional)
+
+Cada título DEVE ativar um pilar emocional diferente:
+
+| # | Pilar | Objetivo | Exemplo de Fórmula |
+|---|-------|----------|-------------------|
+| 1 | **CURIOSIDADE** | Criar gap de informação | `O que [X] esconde sobre [Y]` |
+| 2 | **MEDO/URGÊNCIA** | Explorar instinto de preservação | `PARE de [X] - aqui está o porquê` |
+| 3 | **DESEJO/RECOMPENSA** | Prometer ganho tangível | `Do ZERO ao [Resultado] em [Tempo]` |
+| 4 | **SURPRESA/NOVIDADE** | Desafiar status quo | `[X Popular] é uma MENTIRA` |
+| 5 | **FOMO** | Gerar sensação de perda | `99% dos devs NÃO sabem isso` |
 
 **Regras:**
-- Máximo 70 caracteres
-- Emoji estratégico no início
-- Números concretos
-- Cada título usa fórmula DIFERENTE
+- Máximo **55 caracteres** por título
+- Power word nas **primeiras 3 palavras**
+- Cada título usa **pilar DIFERENTE**
+- Open Loop em **todos** os títulos
 - CTR mínimo: 8/10
 
-#### 3.2 Tags (lista separada por vírgula)
+---
 
-**Regras:**
-- Máximo 500 caracteres total
-- Mix de tags curtas e longas (long-tail)
+### Passo 3: Gerar Pacote SEO Completo
+
+#### 3.1 Tags (máx 500 caracteres)
+- Mix de tags curtas e long-tail
 - Incluir variações com/sem acento
 - Tag principal = título exato
 
-#### 3.3 Hashtags
-
-**Regras:**
-- Máximo 3 hashtags
-- Usar na descrição do YouTube
+#### 3.2 Hashtags (máx 3)
 - Palavras-chave principais
+- Usar na descrição do YouTube
 
-#### 3.4 Hook de Abertura (primeiros 30 segundos)
+#### 3.3 Hook de Abertura (30 segundos)
 
 **Estrutura:**
 1. **Provocação** (0-5s): Pergunta ou afirmação impactante
 2. **Promessa** (5-15s): O que o viewer vai ganhar
 3. **Credibilidade** (15-30s): Por que você pode ensinar isso
 
-### 4. Salvar Resultado
+---
 
-**Caminho**: `outputs/Lista de ideias/[TÍTULO_SLUG].md`
+### Passo 4: Salvar Resultado
+
+**Caminho:** `outputs/Lista de ideias/[TÍTULO_SLUG].md`
 
 **Template:**
 
 ```markdown
 # 🎬 [IDEIA ORIGINAL]
 
-**Score**: X/10 | **Data**: YYYY-MM-DD
+**Score**: X/10 | **Data**: YYYY-MM-DD | **Estratégia**: Browse/Search
 
 ---
 
-## 🎯 TÍTULOS
+## 🎯 TÍTULOS (5 Pilares Emocionais)
 
-1. [EMOJI] Título opção 1 (CTR: X.X) - Fórmula: [nome]
-2. [EMOJI] Título opção 2 (CTR: X.X) - Fórmula: [nome]
-3. [EMOJI] Título opção 3 (CTR: X.X) - Fórmula: [nome]
+| # | Pilar | Título | Chars |
+|---|-------|--------|-------|
+| 1 | Curiosidade | [EMOJI] Título aqui | XX |
+| 2 | Medo/Urgência | [EMOJI] Título aqui | XX |
+| 3 | Desejo/Recompensa | [EMOJI] Título aqui | XX |
+| 4 | Surpresa/Novidade | [EMOJI] Título aqui | XX |
+| 5 | FOMO | [EMOJI] Título aqui | XX |
 
 ---
 
@@ -111,47 +128,61 @@ tag1, tag2, tag3, tag4, tag5, tag6, tag7, tag8
 
 ## 🎬 HOOK (primeiros 30s)
 
-"[Script do hook de abertura - estrutura: provocação + promessa + credibilidade]"
+"[Script do hook: provocação + promessa + credibilidade]"
 ```
 
-### 5. Persistir no Neo4j
+---
 
-```javascript
-mcp__neo4j-memory__create_entities([{
-  name: "TítuloViral:{titulo}",
-  entityType: "video_title",
-  observations: ["ctr:{score}", "formula:{formula}", "keywords:{keywords}"]
-}])
-```
-
-## Output Final para Usuário
+### Passo 5: Output para Usuário
 
 ```
 ✅ Pacote SEO gerado!
 
-Score: 8.5/10
+Score: 8.5/10 | Estratégia: Browse
 
 📄 outputs/Lista de ideias/[slug].md
 ```
 
-## Contexto Importante
+---
 
-### Sobre COWORK (Anthropic)
-COWORK é uma feature da Anthropic (não coworking físico):
-- Modo do Claude Desktop para automação de tarefas
-- Permite executar código, manipular arquivos, navegar web
-- Funciona como "funcionário de IA" pessoal
-- Concorrente: Claude Code (mais técnico, linha de comando)
+## Regras de Operação
 
-### Audiência-Alvo
-- Desenvolvedores brasileiros
-- Interessados em IA e automação
-- Nível: Iniciante a avançado
-- Preferência: Tutoriais práticos com resultado rápido
+### SEMPRE
+1. Gerar **5 títulos** (1 por pilar emocional)
+2. Máximo **55 caracteres** por título
+3. **Frontloading** obrigatório
+4. **Open Loop** em todos os títulos
+5. Output minimalista
+
+### NUNCA
+1. Revelar informação completa no título
+2. Gancho no final do título
+3. Exceder 55 caracteres
+4. Usar mesmo pilar em múltiplos títulos
+5. Output verboso
+
+---
 
 ## Recursos
 
 ### references/
-- `viral_formulas.md` - Database de fórmulas virais
-- `power_words.md` - Palavras de impacto
-- `scoring_criteria.md` - Critérios de validação
+- `psicologia_clique.md` - Fundamentos da psicologia do clique
+- `viral_formulas.md` - Fórmulas por pilar emocional
+- `power_words.md` - Palavras de impacto e frontloading
+- `scoring_criteria.md` - Checklist de 6 pontos e validação
+
+---
+
+## Contexto
+
+### Audiência-Alvo
+- Desenvolvedores brasileiros
+- Nível: Intermediário a avançado
+- Interesse: Automação, IA, produtividade
+- Preferência: Tutoriais práticos com resultado rápido
+
+### Sobre COWORK (Anthropic)
+COWORK é uma feature da Anthropic (não coworking físico):
+- Modo do Claude Desktop para automação de tarefas
+- Funciona como "funcionário de IA" pessoal
+- Concorrente: Claude Code (mais técnico, linha de comando)

@@ -1,6 +1,6 @@
 # /youtube - Gerador de Pacote SEO Completo
 
-Gera pacote completo para YouTube: título viral, descrição, tags, thumbnail e hook.
+Gera pacote completo para YouTube: 5 títulos virais (1 por pilar emocional), tags, hashtags e hook.
 
 ## Uso
 
@@ -12,51 +12,60 @@ Gera pacote completo para YouTube: título viral, descrição, tags, thumbnail e
 
 Quando o usuário executar `/youtube [ideia]`:
 
-### 1. Carregar Skill
+### 1. Carregar Skill e References
 
-Ler a skill `viral-youtube-titles` para contexto completo:
+Ler todos os arquivos para contexto completo:
 ```
 .claude/skills/viral-youtube-titles/SKILL.md
+.claude/skills/viral-youtube-titles/references/psicologia_clique.md
+.claude/skills/viral-youtube-titles/references/viral_formulas.md
+.claude/skills/viral-youtube-titles/references/power_words.md
+.claude/skills/viral-youtube-titles/references/scoring_criteria.md
 ```
 
-### 2. Consultar Neo4j
+### 2. Validar Ideia
 
-```javascript
-mcp__neo4j-memory__search_memories("{ideia}")
-```
+**Checklist Obrigatório (6 pontos):**
+- [ ] Máximo 55 caracteres?
+- [ ] Frontloading aplicado?
+- [ ] Open Loop identificado?
+- [ ] Gatilho emocional definido?
+- [ ] Alinhamento Browse/Search?
+- [ ] Título entrega promessa?
 
-### 3. Validar Ideia (Score 0-10)
+**Score mínimo: 7/10**
 
-Aplicar critérios de `references/scoring_criteria.md`
+### 3. Gerar 5 Títulos (1 por Pilar Emocional)
 
-### 4. Gerar Pacote SEO Completo
+| # | Pilar | Objetivo |
+|---|-------|----------|
+| 1 | CURIOSIDADE | Gap de informação |
+| 2 | MEDO/URGÊNCIA | Instinto de preservação |
+| 3 | DESEJO/RECOMPENSA | Ganho tangível |
+| 4 | SURPRESA/NOVIDADE | Desafiar status quo |
+| 5 | FOMO | Sensação de perda |
 
-Seguir template da SKILL.md:
-- 3 variações de título (fórmulas diferentes)
-- Descrição com timestamps
+**Regras:**
+- Máximo **55 caracteres** por título
+- Power word nas **primeiras 3 palavras**
+- **Open Loop** em todos os títulos
+
+### 4. Completar Pacote SEO
+
 - Tags (máx 500 chars)
-- Sugestão de thumbnail
-- Script do hook (30s)
+- Hashtags (máx 3)
+- Hook de 30 segundos
 
 ### 5. Salvar Arquivo
 
 **Caminho**: `outputs/Lista de ideias/[TÍTULO_SLUG].md`
-
-Usar template SEO Completo da SKILL.md
-
-### 6. Persistir no Neo4j
-
-```javascript
-mcp__neo4j-memory__create_entities([...])
-```
 
 ## Output para Usuário
 
 ```
 ✅ Pacote SEO gerado!
 
-Título: [TÍTULO VENCEDOR]
-Score: 8.5/10 | CTR: 9.5/10
+Score: 8.5/10 | Estratégia: Browse
 
 📄 outputs/Lista de ideias/[slug].md
 ```
@@ -65,5 +74,6 @@ Score: 8.5/10 | CTR: 9.5/10
 
 - ❌ NÃO mostrar conteúdo completo do arquivo
 - ❌ NÃO explicar cada etapa
-- ✅ Apenas confirmação + título + path
-- ✅ Usuário abre arquivo para copiar seções
+- ❌ NÃO exceder 55 caracteres por título
+- ✅ Apenas confirmação + score + path
+- ✅ Usuário abre arquivo para ver detalhes

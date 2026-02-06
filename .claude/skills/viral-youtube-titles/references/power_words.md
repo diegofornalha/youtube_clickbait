@@ -1,462 +1,172 @@
-# Power Words Dictionary for Viral YouTube Titles
+# Léxico de Performance: Power Words
 
-## Organized by Emotional Impact and Use Case
+## Regra de Frontloading
 
-### 🔥 High-Energy / Excitement Words
-**Maximum Impact** (Use sparingly - 1 per title max)
-- Insane
-- Mind-Blowing
-- Shocking
-- Explosive
-- Revolutionary
-- Game-Changing
-- Unbelievable
-- Jaw-Dropping
-- Epic
-- Legendary
+> **Power words devem aparecer nas PRIMEIRAS 3 PALAVRAS do título.**
 
-**Strong Impact**
-- Amazing
-- Incredible
-- Awesome
-- Brilliant
-- Stunning
-- Spectacular
-- Phenomenal
-- Extraordinary
-- Remarkable
-- Astonishing
+O cérebro faz leitura dinâmica (skimming) em 0.5 segundos. Se o gancho estiver no final, ele será cortado pelas "reticências da morte" no mobile.
 
-**Moderate Impact**
-- Exciting
-- Impressive
-- Surprising
-- Interesting
-- Fascinating
-- Compelling
-- Engaging
-- Dynamic
-- Powerful
-- Energizing
+### Exemplos de Frontloading
 
-### 😱 Fear & Urgency Triggers
-**Creating FOMO**
-- Disappearing
-- Limited
-- Ending Soon
-- Last Chance
-- Before It's Gone
-- Expires
-- Running Out
-- Almost Over
-- Final
-- Closing
+```
+❌ "Aprendi muito sobre como programar usando IA" (gancho no final)
+✅ "IA MUDOU como eu programo" (gancho no início)
 
-**Warning & Caution**
-- Warning
-- Alert
-- Danger
-- Risk
-- Threat
-- Mistake
-- Wrong
-- Avoid
-- Never
-- Stop
+❌ "Tutorial completo de Python para iniciantes que querem aprender"
+✅ "PYTHON do zero - guia definitivo"
 
-**Time Pressure**
-- Now
-- Today
-- Immediately
-- Instant
-- Quick
-- Fast
-- Hurry
-- Rush
-- Urgent
-- ASAP
+❌ "Descubra como aumentar sua produtividade com automação"
+✅ "AUTOMAÇÃO: seu código 10x melhor"
+```
 
-### 💰 Value & Benefit Indicators
-**Free/Easy**
-- Free
-- Complimentary
-- Zero Cost
-- Gratis
-- No Charge
-- Giveaway
-- Bonus
-- Gift
-- Prize
-- Freebie
+---
 
-**Simplicity**
-- Easy
-- Simple
-- Effortless
-- Straightforward
-- Basic
-- Elementary
-- Foolproof
-- Painless
-- Smooth
-- Uncomplicated
+## Power Words por Pilar Emocional
 
-**Savings/Gains**
-- Save
-- Profit
-- Gain
-- Earn
-- Cheap
-- Affordable
-- Budget
-- Bargain
-- Discount
-- Deal
+### 1. CURIOSIDADE
 
-### 🎯 Specificity & Credibility
-**Authority Markers**
-- Proven
-- Tested
-- Verified
-- Confirmed
-- Certified
-- Guaranteed
-- Authentic
-- Legitimate
-- Official
-- Scientific
+| Categoria | Palavras | Uso |
+|-----------|----------|-----|
+| **Mistério** | Segredo, Escondido, Oculto, Confidencial | Criar gap de informação |
+| **Descoberta** | Revelei, Descobri, Encontrei, Desvendei | Sugerir conhecimento exclusivo |
+| **Pergunta** | Por que, Como, O que, Qual | Ativar busca por resposta |
+| **Negação** | Ninguém, Nunca, Nada, Nem um | Criar exclusividade |
 
-**Precision Words**
-- Exact
-- Specific
-- Precise
-- Detailed
-- Complete
-- Comprehensive
-- Thorough
-- Full
-- Total
-- Entire
+**Combinações Vencedoras:**
+- "DESCOBRI o segredo"
+- "O que NINGUÉM conta"
+- "Por que NENHUM dev sabe"
 
-**Expert/Professional**
-- Expert
-- Professional
-- Master
-- Guru
-- Specialist
-- Authority
-- Leader
-- Champion
-- Genius
-- Wizard
+---
 
-### 🤔 Curiosity & Mystery
-**Hidden Information**
-- Secret
-- Hidden
-- Concealed
-- Confidential
-- Classified
-- Underground
-- Behind-the-Scenes
-- Insider
-- Exclusive
-- Private
+### 2. MEDO / URGÊNCIA
 
-**Discovery Words**
-- Reveal
-- Expose
-- Uncover
-- Discover
-- Find
-- Unlock
-- Decode
-- Unveil
-- Show
-- Demonstrate
+| Categoria | Palavras | Uso |
+|-----------|----------|-----|
+| **Alerta** | Aviso, Atenção, Cuidado, Alerta, Pare | Interromper scrolling |
+| **Perda** | Matou, Destruiu, Arruinou, Acabou | Mostrar consequência |
+| **Tempo** | Agora, Hoje, Antes, Imediato, Urgente | Criar pressão temporal |
+| **Negativo** | Erro, Problema, Falha, Bug, Risco | Identificar dor |
 
-**Question Triggers**
-- Why
-- How
-- What
-- When
-- Where
-- Who
-- Which
-- Really
-- Actually
-- Truly
+**Combinações Vencedoras:**
+- "Este ERRO matou"
+- "PARE de fazer isso"
+- "AVISO: isso destrói"
 
-### 🚀 Transformation & Progress
-**Change Indicators**
-- Transform
-- Convert
-- Revolutionize
-- Evolve
-- Upgrade
-- Improve
-- Enhance
-- Boost
-- Elevate
-- Advance
+---
 
-**Success Words**
-- Win
-- Succeed
-- Achieve
-- Accomplish
-- Master
-- Conquer
-- Dominate
-- Crush
-- Triumph
-- Victory
+### 3. DESEJO / RECOMPENSA
 
-**Growth Terms**
-- Grow
-- Expand
-- Increase
-- Multiply
-- Accelerate
-- Skyrocket
-- Explode
-- Surge
-- Soar
-- Climb
+| Categoria | Palavras | Uso |
+|-----------|----------|-----|
+| **Resultado** | Fiz, Consegui, Ganhei, Criei, Alcancei | Provar possibilidade |
+| **Velocidade** | Rápido, Minutos, Horas, Instantâneo | Mostrar facilidade |
+| **Quantidade** | 10x, 100%, Milhares, Muito, Imenso | Amplificar ganho |
+| **Transformação** | Mudou, Transformou, Revolucionou, Virou | Mostrar antes/depois |
 
-### 📊 Comparison & Ranking
-**Superlatives**
-- Best
-- Worst
-- Greatest
-- Ultimate
-- Supreme
-- Top
-- Premium
-- Elite
-- Superior
-- Inferior
+**Combinações Vencedoras:**
+- "FIZ R$10K em"
+- "Do ZERO ao resultado"
+- "MUDOU meu código"
 
-**Comparison Words**
-- Versus
-- Compared
-- Better
-- Worse
-- More
-- Less
-- Most
-- Least
-- Than
-- Against
+---
 
-**Ranking Terms**
-- First
-- Last
-- Number One
-- Top-Rated
-- Highest
-- Lowest
-- Leading
-- Trailing
-- Winning
-- Losing
+### 4. SURPRESA / NOVIDADE
 
-### 💔 Problem & Pain Points
-**Negative Emotions**
-- Frustrated
-- Annoyed
-- Confused
-- Stuck
-- Lost
-- Overwhelmed
-- Stressed
-- Worried
-- Anxious
-- Scared
+| Categoria | Palavras | Uso |
+|-----------|----------|-----|
+| **Choque** | Chocante, Bizarro, Inacreditável, Absurdo | Maximizar impacto |
+| **Verdade** | Verdade, Real, Mentira, Mito, Fake | Revelar realidade |
+| **Contrário** | Mas, Porém, Errado, Contrário, Oposto | Desafiar status quo |
+| **Intensidade** | Brutal, Insano, Louco, Extremo | Amplificar emoção |
 
-**Failure Words**
-- Fail
-- Mistake
-- Error
-- Wrong
-- Problem
-- Issue
-- Challenge
-- Struggle
-- Difficulty
-- Obstacle
+**Combinações Vencedoras:**
+- "A VERDADE brutal"
+- "Por que está ERRADO"
+- "[X] é uma MENTIRA"
 
-**Loss Indicators**
-- Lose
-- Miss
-- Waste
-- Squander
-- Forfeit
-- Sacrifice
-- Abandon
-- Quit
-- Give Up
-- Surrender
+---
 
-### 🎁 Exclusive & Special
-**Exclusivity Markers**
-- Exclusive
-- VIP
-- Premium
-- Elite
-- Select
-- Special
-- Unique
-- Rare
-- Limited Edition
-- One-of-a-Kind
+### 5. FOMO (Fear of Missing Out)
 
-**New & Fresh**
-- New
-- Latest
-- Fresh
-- Modern
-- Current
-- Updated
-- Revised
-- Revolutionary
-- Innovative
-- Cutting-Edge
+| Categoria | Palavras | Uso |
+|-----------|----------|-----|
+| **Exclusividade** | Poucos, Elite, Seleto, Raro, VIP | Criar escassez |
+| **Timing** | Antes, Tarde, Acabando, Último, Final | Pressão temporal |
+| **Percentual** | 99%, Maioria, Todos, Ninguém | Mostrar minoria |
+| **Tendência** | Novo, 2025, Trending, Explosão, Boom | Surfar momento |
 
-**Access Words**
-- Unlock
-- Access
-- Enter
-- Join
-- Insider
-- Member
-- Behind
-- Backstage
-- Private
-- Personal
+**Combinações Vencedoras:**
+- "99% dos devs NÃO sabem"
+- "ANTES que vire mainstream"
+- "Vai EXPLODIR em 2025"
 
-### 😮 Surprise & Shock
-**Unexpected Results**
-- Surprising
-- Unexpected
-- Bizarre
-- Strange
-- Weird
-- Unusual
-- Odd
-- Peculiar
-- Curious
-- Mysterious
+---
 
-**Contradiction Words**
-- But
-- However
-- Actually
-- Really
-- Truth
-- Myth
-- Lie
-- Wrong
-- Misconception
-- Misunderstood
+## Regras de Uso
 
-### 📈 Data & Numbers
-**Statistical Terms**
-- Percent
-- Statistics
-- Data
-- Numbers
-- Facts
-- Figures
-- Metrics
-- Analytics
-- Results
-- Findings
+### FAZER
 
-**Quantity Indicators**
-- Multiple
-- Several
-- Numerous
-- Many
-- Few
-- Couple
-- Dozen
-- Hundreds
-- Thousands
-- Millions
+```
+✅ Usar 1-2 power words por título (máximo)
+✅ Posicionar nas primeiras 3 palavras
+✅ Combinar com números específicos
+✅ Alinhar com o pilar emocional escolhido
+✅ Manter coerência com conteúdo real
+```
 
-## Usage Guidelines
+### EVITAR
 
-### Dos:
-✅ Use 1-2 power words maximum per title
-✅ Match power words to video content
-✅ Test different emotional triggers
-✅ Combine with specific numbers
-✅ Place power words at the beginning when possible
+```
+❌ Empilhar palavras intensas ("INSANO CHOCANTE ÉPICO")
+❌ Usar no final do título (será cortado)
+❌ Misturar pilares conflitantes
+❌ Clickbait sem entrega real
+❌ Repetir mesmas palavras em títulos consecutivos
+```
 
-### Don'ts:
-❌ Stack multiple intense words (avoid "INSANE SHOCKING EPIC")
-❌ Use power words that don't match content tone
-❌ Rely solely on power words without substance
-❌ Use outdated or overused terms
-❌ Force power words where they don't fit naturally
+---
 
-## Power Word Combinations That Work
+## Mapa de Intensidade
 
-### Classic Combos:
-- "Secret" + "Revealed"
-- "Ultimate" + "Guide"
-- "Simple" + "Trick"
-- "Hidden" + "Truth"
-- "Proven" + "Method"
-- "Easy" + "Hack"
-- "Complete" + "Tutorial"
-- "Real" + "Reason"
-- "Shocking" + "Discovery"
-- "Free" + "Resource"
+### Alta Intensidade (usar com moderação)
+```
+Insano | Chocante | Explosivo | Brutal | Inacreditável
+```
+**Quando usar:** Conteúdo verdadeiramente impactante
 
-### Niche-Specific Winners:
+### Média Intensidade (uso comum)
+```
+Segredo | Erro | Mudou | Descobri | Verdade
+```
+**Quando usar:** Maioria dos vídeos
 
-**Tech:**
-- Revolutionary Feature
-- Game-Changing Update
-- Hidden Settings
-- Secret Shortcuts
-- Powerful Tools
+### Baixa Intensidade (sempre válido)
+```
+Novo | Guia | Tutorial | Método | Truque
+```
+**Quando usar:** Conteúdo evergreen/SEO
 
-**Finance:**
-- Proven Strategy
-- Hidden Costs
-- Secret Investment
-- Guaranteed Returns
-- Simple Formula
+---
 
-**Fitness:**
-- Rapid Results
-- Easy Exercises
-- Scientific Method
-- Proven Routine
-- Transform Body
+## Palavras por Nicho: Dev/Tech
 
-**Education:**
-- Master Quickly
-- Learn Fast
-- Simple Explanation
-- Complete Course
-- Easy Understanding
+| Contexto | Power Words |
+|----------|-------------|
+| **Bug/Erro** | Matou, Quebrou, Destruiu, Bugou, Crashou |
+| **Performance** | 10x, Rápido, Otimizado, Leve, Performático |
+| **Aprendizado** | Masterizei, Dominei, Entendi, Aprendi, Descobri |
+| **Código** | Clean, Elegante, Simples, Genial, Hackeado |
+| **Carreira** | Senior, FAANG, Salário, Promoção, Contratado |
 
-## Testing Power Words
+---
 
-Track performance of different power word categories:
+## Checklist de Power Words
 
-1. **Emotional** (Shocking, Amazing) - Best for entertainment
-2. **Value** (Free, Easy) - Best for tutorials
-3. **Urgency** (Now, Limited) - Best for time-sensitive content
-4. **Authority** (Proven, Expert) - Best for educational content
-5. **Mystery** (Secret, Hidden) - Best for revelatory content
+Antes de publicar, valide:
 
-Rotate through categories and track:
-- Click-through rate
-- Watch time
-- Engagement rate
-- Subscriber conversion
+- [ ] Power word está nas primeiras 3 palavras?
+- [ ] Alinhada com o pilar emocional do título?
+- [ ] Intensidade adequada ao conteúdo?
+- [ ] Não está empilhando múltiplas palavras intensas?
+- [ ] O conteúdo entrega o que a palavra promete?

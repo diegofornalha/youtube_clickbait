@@ -4,20 +4,17 @@ Guia para Claude Code ao trabalhar neste repositório.
 
 ## Visão Geral
 
-Sistema para geração de títulos virais para YouTube usando **Skills**, **Neo4j** e **Hooks**.
+Sistema para geração de títulos virais para YouTube usando **Skills** e **Hooks**.
 
 ### Como Funciona
 
 1. Usuário executa `/youtube [ideia]`
-2. Sistema consulta Neo4j para contexto histórico
-3. Skill valida potencial e gera 3 variações de título
-4. Resultado salvo em `outputs/Lista de ideias/`
-5. Aprendizados persistem no Neo4j
+2. Skill valida potencial e gera 3 variações de título
+3. Resultado salvo em `outputs/Lista de ideias/`
 
 ### Tech Stack
 
 - **Claude Code** - Orquestração
-- **Neo4j MCP** - Memória persistente (padrões virais, histórico)
 - **Skills** - Conhecimento especializado em títulos virais
 - **Hooks** - Automação pós-execução
 
@@ -38,7 +35,7 @@ Sistema para geração de títulos virais para YouTube usando **Skills**, **Neo4
 │   ├── auto_save_output.py     # Auto-save após Write
 │   └── log_agent_execution.py  # Log de execuções
 │
-└── settings.local.json         # Permissões Neo4j
+└── settings.local.json        
 
 outputs/
 └── Lista de ideias/            # Arquivos gerados
@@ -68,11 +65,9 @@ A skill centraliza todo o conhecimento para geração de títulos:
 
 ### Workflow
 
-1. Consultar Neo4j (`search_memories`)
-2. Validar potencial (score 0-10)
-3. Gerar 3 títulos com fórmulas diferentes
-4. Salvar arquivo minimalista
-5. Persistir no Neo4j
+1. Validar potencial (score 0-10)
+2. Gerar 3 títulos com fórmulas diferentes
+3. Salvar arquivo minimalista
 
 ### Fórmulas Virais
 
@@ -88,40 +83,14 @@ A skill centraliza todo o conhecimento para geração de títulos:
 - `references/power_words.md` - Palavras de impacto
 - `references/scoring_criteria.md` - Critérios de validação
 
-## Neo4j Integration
 
-### Ferramentas Pré-Aprovadas
-
-```json
-{
-  "permissions": {
-    "allow": [
-      "mcp__neo4j-memory__search_memories",
-      "mcp__neo4j-memory__create_entities",
-      "mcp__neo4j-memory__add_observations"
-    ]
-  }
-}
-```
-
-### Consultas Comuns
-
-```python
-# Buscar padrões
-mcp__neo4j-memory__search_memories("claude sdk")
-
-# Ver grafo completo
-mcp__neo4j-memory__read_graph()
-```
 
 ## Regras de Operação
 
 ### SEMPRE
 
-1. Consultar Neo4j antes de processar
-2. Gerar 3 variações com fórmulas diferentes
-3. Salvar no Neo4j após gerar
-4. Manter output minimalista (máx 4 linhas)
+1. Gerar 3 variações com fórmulas diferentes
+2. Manter output minimalista (máx 4 linhas)
 
 ### NUNCA
 
